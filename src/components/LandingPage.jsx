@@ -4,9 +4,9 @@ import About from "@/components/About";
 import Experiences from "@/components/Experience";
 import Skills from "@/components/Skills";
 import { useRef } from "react";
-import Leadership from "./Leadership";
+// import Leadership from "./Leadership";
 import Projects from "./Projects";
-import { ArrowUpCircleIcon } from "@heroicons/react/24/solid";
+import ShakeButton from "@/components/buttons/ShakeButton";
 
 const LandingPage = () => {
   const refs = useRef([]);
@@ -32,11 +32,6 @@ const LandingPage = () => {
       label: "Skills",
     },
     {
-      elementId: "leadership",
-      elementNode: <Leadership />,
-      label: "Leadership",
-    },
-    {
       elementId: "projects",
       elementNode: <Projects />,
       label: "Projects",
@@ -54,7 +49,7 @@ const LandingPage = () => {
   };
 
   return (
-    <div className="flex flex-col relative min-h-screen text-slate-100 bg-gradient-to-tr from-slate-800 to-slate-800 font-sans pb-20">
+    <div className="flex flex-col relative min-h-screen text-slate-100 bg-slate-800 font-sans pb-20">
       <Navbar sectionRefs={refs} links={links} />
       {elements.map(({ elementId, elementNode }) => (
         <div
@@ -66,10 +61,7 @@ const LandingPage = () => {
         </div>
       ))}
       <div className="bottom-0 max-w-4xl px-4 mx-auto">
-        {/* TODO: Add slingshot animation to button */}
-        <button type="button" className="ring-amber-500 hover:ring-2 rounded-full transition-all" onClick={handleScrollToTop}>
-          <ArrowUpCircleIcon className="w-12 h-12" />
-        </button>
+        <ShakeButton onClick={handleScrollToTop} />
       </div>
     </div>
   );

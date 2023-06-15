@@ -1,18 +1,7 @@
 import Card from "./Card"
 import Heading from "./Heading"
 import Wrapper from "./Wrapper"
-
-const transferableSkills = [
-  { skill: "Communication", desc: "Great written and oral communication skills demonstrated through my time working at Gecko by delivering web-based features that solved customer requirements." },
-  { skill: "Teamwork", desc: "Exhibited strong collaboration at Gecko by utilising the agile development process to effectively cooperate within a team of five, increasing the efficiency and quality of deliverables." },
-  { skill: "Resilience", desc: "Consistently achieved and exceeded expectations in a fast-paced and high stress environment at Pharmacare and Gecko." },
-  { skill: "Organisation", desc: "Managed tasks and time effectively by prioritising tasks using agile methodologies, Fibonacci sequence and Trello." },
-  { skill: "Problem Solving", desc: "Solved customers’ problems by eliciting their requirements and effectively developing web-based features." },
-  { skill: "Attention to Detail", desc: "Analysed customer requirements and user stories, and reviewed code effectively to ensure an optimised development pipeline." },
-]
-
-const technicalSkills = ["Next.js", "React.js", "Vue", "Svelte", "Apollo", "ExpressJS", "Flask", "NodeJS"]
-
+import { technicalSkills, transferableSkills } from "@/util/getText"
 
 const Skills = () => {
   return (

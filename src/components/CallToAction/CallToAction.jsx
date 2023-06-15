@@ -14,6 +14,8 @@ const CTA = () => {
     >
       <div className="h-[120vh] md:h-screen py-4 relative overflow-hidden bg-gradient-to-b from-slate-900 to-transparent">
         <div className={styles.paperGrid}></div>
+        <div className="w-1/2 mx-auto absolute left-0 right-0 !fill-white">
+        </div>
         <div className="w-4/5 left-0 right-0 mt-32 mx-auto gap-4 flex flex-col items-center absolute">
           <p className="text-xl uppercase">Paul McNamara</p>
           <h1 className="text-6xl font-bold text-center">

@@ -33,16 +33,16 @@ const Projects = () => {
   ];
 
   return (
-    <div>
+    <div className="bg-slate-700">
       <Wrapper>
         <Heading text="Projects & Research" />
         <div className="flex flex-row flex-wrap gap-4 mt-6 text-slate-300">
           {projects.map((project) => (
             <div
               key={project.title}
-              className="border border-amber-900/40 bg-amber-800/5 rounded-lg shadow-lg"
+              className="bg-white/5 rounded-lg shadow-lg"
             >
-              <div className="flex flex-col gap-2 py-4 rounded-lg">
+              <div className="flex flex-col gap-2  py-4 rounded-lg">
                 <div className="font-bold text-lg px-4">{project.title}</div>
                 <div className="px-4">{project.description}</div>
                 {project.link && (
@@ -55,7 +55,7 @@ const Projects = () => {
                     </Link>
                   </div>
                 )}
-                <div className="border-t border-amber-900">
+                <div className="border-t border-white">
                   <div className="font-bold px-4 py-2">Learning outcomes</div>
                   <ul className="flex flex-row flex-wrap gap-2 px-4">
                     {project.learnings.map((learning) => (

@@ -6,7 +6,7 @@ const HamburgerMenu = ({ onClick, className, ...rest }) => {
     <button
       onClick={onClick}
       {...rest}
-      className={`bg-amber-500 absolute mt-10 z-10 w-14 h-14 overflow-hidden rounded-r-lg shadow-lg shadow-[#210e044d] sm:hidden transition-all duration-300 ${className}`}
+      className={`bg-amber-500 active:!bg-red-500 absolute mt-10 z-10 w-14 h-14 overflow-hidden rounded-r-lg shadow-lg shadow-[#210e044d] sm:hidden transition-all duration-300 ${className}`}
     >
       <div className="relative h-full">
         <div className={`absolute w-full h-full top-0 ${styles.polka}`}></div>

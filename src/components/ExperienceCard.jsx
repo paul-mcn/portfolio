@@ -17,7 +17,7 @@ const ExperienceCard = ({ title, dates, responsibilities = [], achievements = []
   ]
 
   return (
-    <div className="shadow-xl rounded-lg bg-slate-800 py-2 border">
+    <div className="rounded-lg bg-slate-800 py-2 border-2 border-slate-500 shadow-[0_1_1_1_1] shadow-white">
       <div className="px-4 text-xl py-2 flex flex-row items-center justify-between">
         <div className="font-bold">
           {title}
@@ -26,15 +26,16 @@ const ExperienceCard = ({ title, dates, responsibilities = [], achievements = []
           {dates}
         </div>
       </div>
-      <div className="flex flex-col [&>div]:border-t">
+      {/* <div className="flex flex-col [&>div]:border-t"> */}
+      <div className="flex flex-col">
         {sections.map(({ title, list, icon }) => (
           <div key={title} className="px-4 py-2">
             <div className="flex flex-row items-center font-bold gap-2">
               {icon}
               {title}
             </div>
-            <ul className="list-disc pl-6 flex flex-col gap-1 mt-1">
-              {list.map(item => <li key={item} className="">{item}</li>)}
+            <ul className="flex flex-col gap-1 mt-1">
+              {list.map(item => <li key={item} className="bg-slate-700 px-4 py-2 rounded-md">{item}</li>)}
             </ul>
           </div>
         ))}
