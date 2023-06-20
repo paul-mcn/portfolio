@@ -1,6 +1,6 @@
 const getLeadership = () => {
   return [
-    "Coordinated and oversaw development of a billing system while working at Income Energy through effective management of team tasks and resources, ensuring project milestones were met.",
+    "Coordinated and oversaw development of a billing system while working at Axon Energy through effective management of team tasks and resources, ensuring project milestones were met.",
     "Led and motivated a team as house captain, additionally, organising house events and representing the house in competitions.",
   ];
 };
@@ -28,8 +28,9 @@ const getExperiences = () => {
       ],
     },
     {
-      title: "Income Energy",
+      title: "Axon Energy",
       dates: "Feb 2021 – Aug 2021",
+      imagePath: "/images/axon-energy-logo.webp",
       experienceType: "Internship",
       responsibilities: [
         "Create and maintain a billing system, ensuring accuracy and security of customer data.",
@@ -49,8 +50,9 @@ const getExperiences = () => {
     },
     {
       title: "University Of Technology Sydney",
-      experienceType: "Study",
       dates: "Mar 2019 – Ongoing",
+      imagePath: "/images/uts-logo.webp",
+      experienceType: "Study",
       responsibilities: [
         "Ensure that systems are resilient and perform as expected, with the ability to handle unusual combinations of events and maintain performance throughout the system's lifespan. (For core software engineering subjects)",
         "Focus on state-of-the-art research on deep learning and convolutional neural networks (CNNs) with practical applications. (For machine learning subjects)",

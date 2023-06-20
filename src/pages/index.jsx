@@ -1,8 +1,6 @@
 import Head from 'next/head'
-import { Roboto } from 'next/font/google'
 import LandingPage from '@/components/LandingPage'
-
-const roboto = Roboto({ subsets: ['latin'], variable: '--font-roboto', weight: ["400"] })
+import { roboto } from '@/util/getFont'
 
 export default function Home() {
   return (

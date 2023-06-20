@@ -5,8 +5,6 @@ const ImageWithFallback = (props) => {
   const { src, fallbackSrc, ...rest } = props;
   const [imageSrc, setImageSrc] = useState(src);
 
-  console.log(imageSrc);
-
   const handleImageError = () => {
     setImageSrc(fallbackSrc);
   };

@@ -14,19 +14,21 @@ const CTA = () => {
     >
       <div className="h-[120vh] md:h-screen py-4 relative overflow-hidden bg-gradient-to-b from-slate-900 to-transparent">
         <div className={styles.paperGrid}></div>
-        <div className="w-1/2 mx-auto absolute left-0 right-0 !fill-white">
-        </div>
+        <div className="w-1/2 mx-auto absolute left-0 right-0 !fill-white"></div>
         <div className="w-4/5 left-0 right-0 mt-32 mx-auto gap-4 flex flex-col items-center absolute">
           <p className="text-xl uppercase">Paul McNamara</p>
           <h1 className="text-6xl font-bold text-center">
-            I help small businesses and startups build their presence online
+            A full-stack developer who builds user-friendly and
+            conversion-optimised websites
             <span className="text-amber-400">.</span>
           </h1>
           <p className="!test mt-4 w-3/4 text-gray-500 text-xl text-center">
-            I’m a highly motivated emerging software engineer with three years
-            professional experience. I offer a fresh perspective, great
-            communication skills, excellent work ethic and the ability to work
-            exceptionally well under pressure.
+            I’m a highly motivated software engineer who builds user-friendly
+            and conversion-optimised e-commerce websites. With three years of
+            professional experience, I bring a fresh perspective, great
+            communication skills, excellent work ethic, and the ability to work
+            exceptionally well under pressure. Currently, I'm looking for a full-time
+            position.
           </p>
           <div className="flex flex-row gap-4 mt-4">
             {/* <Button */}
