@@ -82,7 +82,9 @@ const Navbar = ({ sectionRefs, links }) => {
         </div>
         <div
           className={`transition-colors duration-300 z-20 absolute sm:relative top-0 h-full ${
-            isPageTop ? "" : "sm:shadow-2xl sm:shadow-slate-900 sm:bg-slate-800"
+            isPageTop
+              ? ""
+              : "sm:shadow-lg sm:shadow-slate-900/70 sm:bg-slate-800"
           }`}
         >
           <ul

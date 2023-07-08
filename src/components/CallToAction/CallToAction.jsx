@@ -4,7 +4,7 @@ import {
 } from "@heroicons/react/24/solid";
 import Link from "next/link";
 import { SocialIcon } from "react-social-icons";
-import Button from "@/components/buttons/Button";
+import GlassButton from "@/components/buttons/GlassButton";
 import styles from "./CallToAction.module.css";
 
 const CTA = () => {
@@ -18,8 +18,7 @@ const CTA = () => {
         <div className="w-4/5 left-0 right-0 mt-32 mx-auto gap-4 flex flex-col items-center absolute">
           <p className="text-xl uppercase">Paul McNamara</p>
           <h1 className="text-6xl font-bold text-center">
-            A full-stack developer who builds user-friendly and
-            conversion-optimised websites
+            Innovative Full Stack Engineer with a passion for AI and growth
             <span className="text-amber-400">.</span>
           </h1>
           <p className="!test mt-4 w-3/4 text-gray-500 text-xl text-center">
@@ -27,7 +26,7 @@ const CTA = () => {
             and conversion-optimised e-commerce websites. With three years of
             professional experience, I bring a fresh perspective, great
             communication skills, excellent work ethic, and the ability to work
-            exceptionally well under pressure. Currently, I'm looking for a full-time
+            exceptionally well under pressure. I'm looking for a full-time
             position.
           </p>
           <div className="flex flex-row gap-4 mt-4">
@@ -38,10 +37,11 @@ const CTA = () => {
             {/*   onClick={() => alert("I promise this will work later")} */}
             {/* /> */}
             <Link href="/Paul-McNamara-Resume.pdf" target="_blank">
-              <Button
+              <GlassButton
                 label="Download CV"
                 icon={<ArrowDownCircleIcon className="w-6 h-6" />}
-                className="bg-amber-500"
+                background="#f59e0b"
+                className="text-amber-800"
               />
             </Link>
           </div>

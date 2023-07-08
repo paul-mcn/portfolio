@@ -5,6 +5,7 @@ import {
   XMarkIcon,
 } from "@heroicons/react/24/solid";
 import Portal from "@/components/Portal";
+import GlassCard from "@/components/GlassCard";
 
 const ExperienceCard = (props) => {
   const {
@@ -35,12 +36,9 @@ const ExperienceCard = (props) => {
   ];
 
   return (
-    <Portal className="fixed inset-0 p-5 mt-[60px] bg-slate-700 z-50">
-      <div className="relative">
-        <div onClick={onClose}>
-          <XMarkIcon className="w-8 h-8 stroke-white stroke-2 fill-none" />
-        </div>
-        <div className="rounded-lg bg-slate-800 py-2 border-2 border-slate-500 shadow-[0_1_1_1_1] shadow-white">
+    <Portal className="fixed top-[60px] bottom-0 w-screen bg-slate-700/70 backdrop-blur-xl z-[100] animate-swipe-in">
+      <div className="p-2 relative text-slate-100 flex flex-row">
+        <div className="">
           <div className="px-4 text-xl py-2 flex flex-row items-center justify-between">
             <div className="font-bold">{title}</div>
             <div className="text-sm">{dates}</div>
@@ -56,7 +54,7 @@ const ExperienceCard = (props) => {
                   {list.map((item) => (
                     <li
                       key={item}
-                      className="bg-slate-700 px-4 py-2 rounded-md"
+                      className="bg-slate-600 px-4 py-2 rounded-md"
                     >
                       {item}
                     </li>
@@ -65,6 +63,9 @@ const ExperienceCard = (props) => {
               </div>
             ))}
           </div>
+        </div>
+        <div onClick={onClose} className="cursor-pointer ml-auto mr-3 w-8 h-8">
+          <XMarkIcon className="w-8 h-8 stroke-white stroke-2 fill-none" />
         </div>
       </div>
     </Portal>
