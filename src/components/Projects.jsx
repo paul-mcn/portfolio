@@ -61,7 +61,7 @@ const Projects = () => {
                     {project.learnings.map((learning) => (
                       <li
                         key={learning}
-                        className="bg-slate-700 px-3 py-1 text-sm text-slate-300 rounded-full shadow-slate-900/10 shadow-md"
+                        className="bg-slate-500 px-3 py-1 text-sm text-slate-300 rounded-full shadow-slate-900/10 shadow-md"
                       >
                         {learning}
                       </li>

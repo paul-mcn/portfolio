@@ -81,10 +81,10 @@ const Navbar = ({ sectionRefs, links }) => {
           />
         </div>
         <div
-          className={`transition-colors duration-300 z-20 absolute sm:relative top-0 h-full ${
+          className={`transition-all duration-300 z-20 absolute sm:relative top-0 h-full sm:bg-gradient-to-tr ${
             isPageTop
-              ? ""
-              : "sm:shadow-lg sm:shadow-slate-900/70 sm:bg-slate-800"
+              ? "sm:from-transparent sm:to-transparent sm:backdrop-blur-0"
+              : "sm:shadow-lg sm:shadow-slate-900/50 sm:from-slate-800/90 sm:to-slate-900 sm:backdrop-blur-sm"
           }`}
         >
           <ul
@@ -102,6 +102,11 @@ const Navbar = ({ sectionRefs, links }) => {
               />
             ))}
           </ul>
+          <div
+            className={`bg-gradient-to-tr from-white/40 shadow h-[1px] transition-opacity ${
+              isPageTop ? "sm:opacity-0" : "sm:opacity-100"
+            }`}
+          ></div>
         </div>
         <div
           className={`w-full absolute mx-auto transition-all delay-100 ${

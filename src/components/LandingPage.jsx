@@ -60,7 +60,7 @@ const LandingPage = () => {
           {elementNode}
         </div>
       ))}
-      <div className="bottom-0 max-w-4xl px-4 mx-auto">
+      <div className="mt-4 max-w-4xl px-4 mx-auto">
         <ShakeButton onClick={handleScrollToTop} />
       </div>
     </div>
