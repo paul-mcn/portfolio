@@ -2,7 +2,7 @@
   /* opacity: 0.9; */
   background: rgb(35, 45, 65, 1);
   background: linear-gradient(
-    50deg,
+    64deg,
     rgba(30, 41, 59, 1) 35%,
     rgba(121, 9, 107, 0.2) 50%,
     rgba(30, 41, 59, 1) 65%
@@ -16,7 +16,7 @@
   top: 0;
   bottom: 0;
   background-size: 40px 40px;
-  --grid-color: hsl(239.82deg, 17.59%, 29.33%, 0.5);
+  --grid-color: #ffffff33;
   background-image: linear-gradient(
       to right,
       var(--grid-color) 1px,
@@ -24,4 +24,32 @@
     ),
     linear-gradient(to bottom, var(--grid-color) 1px, transparent 1px);
   mask-image: linear-gradient(black, transparent);
+}
+
+@keyframes text-box {
+  from {
+    width: 60%;
+  }
+  to {
+    width: 75%;
+  }
+}
+
+@keyframes flicker {
+  0% {
+    color: #0f172a;
+    text-shadow: 0 0 1px white;
+  }
+  100% {
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 0 0 0px white;
+  }
+}
+
+.textBox {
+  animation: text-box 1.4s ease-in-out;
+}
+
+.flicker {
+  animation: flicker ease-in-out;
 }

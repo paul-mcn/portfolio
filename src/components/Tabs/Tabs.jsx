@@ -1,5 +1,6 @@
 const Tabs = ({ items }) => {
-  TODO: Add tabs like chrome browser
+	
+	// TODO: Add tabs like chrome browser
   return (
     <div>
       <div>{items.map(({ heading }) => heading)}</div>

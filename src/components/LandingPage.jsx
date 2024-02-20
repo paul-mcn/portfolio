@@ -1,4 +1,5 @@
-import CallToAction from "@/components/CallToAction";
+import dynamic from 'next/dynamic'
+const CallToAction  = dynamic(() => import("@/components/CallToAction"), { ssr: false })
 import Navbar from "@/components/Navbar";
 import About from "@/components/About";
 import Experiences from "@/components/Experience";

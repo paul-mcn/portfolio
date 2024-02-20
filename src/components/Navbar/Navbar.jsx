@@ -104,7 +104,7 @@ const Navbar = ({ sectionRefs, links }) => {
           </ul>
           <div
             className={`bg-gradient-to-tr from-white/40 shadow h-[1px] transition-opacity ${
-              isPageTop ? "sm:opacity-0" : "sm:opacity-100"
+              isPageTop ? "opacity-0" : "opacity-0 sm:opacity-100"
             }`}
           ></div>
         </div>
