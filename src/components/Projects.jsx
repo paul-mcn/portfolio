@@ -36,7 +36,7 @@ const Projects = () => {
 	return (
 		<div className="bg-slate-700">
 			<Wrapper>
-				<Heading text="Projects & Research" />
+				<Heading text="Projects" />
 				<div className="flex flex-row flex-wrap gap-5 mt-6 text-slate-300">
 					{projects.map((project) => (
 						<div

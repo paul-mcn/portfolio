@@ -10,7 +10,7 @@ import styles from "./CallToAction.module.css";
 
 const CTA = () => {
 	const subtitle =
-		"I’m a highly motivated software engineer who builds user-friendly and conversion-optimised e-commerce websites. With three years of professional experience, I bring a fresh perspective, great communication skills, excellent work ethic, and the ability to work exceptionally well under pressure. I'm looking for a full-time position.";
+		"I'm a highly motivated software engineer specialising in creating user-friendly, conversion-optimised web applications tailored to unique client needs. I excel in developing bespoke solutions beyond standard templates, ensuring each project perfectly aligns with the client's vision. With excellent communication skills, a fresh perspective, and a strong work ethic, I'm open to both contract work and full-time positions, ready to deliver innovative web applications that stand out.";
 	return (
 		<div className="relative">
 			<div className={styles.paperGrid}></div>
@@ -22,33 +22,33 @@ const CTA = () => {
 					<div className="w-4/5 left-0 right-0 mt-32 mx-auto gap-4 flex flex-col items-center">
 						<p className="text-xl uppercase">Paul McNamara</p>
 						<h1 className="text-4xl md:text-6xl font-bold text-center">
-							{[
-								..."Innovative Full Stack Engineer with a passion for AI and growth",
-							].map((l, idx) => {
-								const shouldFlicker = Math.random() > 0.8;
-								const animationDelay = `${0.1 + Math.random()}s`;
-								const animationIterationCount = Math.round(
-									Math.min(Math.random() * 10 + 1, 2),
-								);
-								const animationDuration = `${Math.min(Math.random(), 0.4)}s`;
-								return (
-									<span
-										key={l + idx}
-										className={shouldFlicker ? `${styles.flicker}` : ""}
-										style={
-											shouldFlicker
-												? {
-													animationDelay,
-													animationIterationCount,
-													animationDuration,
-												}
-												: {}
-										}
-									>
-										{l}
-									</span>
-								);
-							})}
+							{[..."Crafting Bespoke Web Applications for Unique Visions"].map(
+								(l, idx) => {
+									const shouldFlicker = Math.random() > 0.8;
+									const animationDelay = `${0.1 + Math.random()}s`;
+									const animationIterationCount = Math.round(
+										Math.min(Math.random() * 10 + 1, 2),
+									);
+									const animationDuration = `${Math.min(Math.random(), 0.4)}s`;
+									return (
+										<span
+											key={l + idx}
+											className={shouldFlicker ? `${styles.flicker}` : ""}
+											style={
+												shouldFlicker
+													? {
+														animationDelay,
+														animationIterationCount,
+														animationDuration,
+													}
+													: {}
+											}
+										>
+											{l}
+										</span>
+									);
+								},
+							)}
 							<span className="text-amber-400">.</span>
 						</h1>
 						<div
@@ -67,17 +67,20 @@ const CTA = () => {
 							<div className="w-3 h-3 border-2 rounded-sm border-slate-400 absolute right-1 bottom-1 bg-slate-900"></div>
 						</div>
 						<div className="flex flex-row gap-4 mt-4">
-							{/* <Button */}
-							{/*   label="Get in touch" */}
-							{/*   icon={<PaperAirplaneIcon className="w-6 h-6" />} */}
-							{/*   className="border-2 border-amber-500" */}
-							{/*   onClick={() => alert("I promise this will work later")} */}
-							{/* /> */}
 							<Link href="/Paul-McNamara-Resume.pdf" target="_blank">
 								<GlassButton
 									label="Download CV"
 									icon={<ArrowDownCircleIcon className="w-6 h-6" />}
+									background="#1c2638"
+									className="text-amber-600 hover:text-amber-500"
+								/>
+							</Link>
+							<Link href="mailto:paul.a.mcnamara@outlook.com">
+								<GlassButton
+									label="Get in touch"
 									background="#f59e0b"
+									primary={true}
+									icon={<PaperAirplaneIcon className="w-6 h-6" />}
 									className="text-amber-800"
 								/>
 							</Link>

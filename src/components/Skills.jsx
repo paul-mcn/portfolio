@@ -10,7 +10,7 @@ const Skills = () => {
 		<div className="text-slate-100">
 			<Wrapper>
 				<Heading text="Skills" />
-				<div className="mt-4">
+				{/**<div className="mt-4">
 					<h3 className="text-xl font-bold">Transferable</h3>
 					<ul className="py-2 grid sm:grid-cols-2 md:grid-cols-3 gap-3 place-items-stretch">
 						{transferableSkills.map(({ skill, desc }) => (
@@ -24,9 +24,9 @@ const Skills = () => {
 							</li>
 						))}
 					</ul>
-				</div>
+				</div>*/}
 				<div className="mt-6">
-					<h3 className="text-xl font-bold">Technical</h3>
+					{/** <h3 className="text-xl font-bold">Technical</h3>*/}
 					<ul className="py-2 grid grid-cols-2 sm:grid-cols-4 gap-3 place-items-stretch">
 						{technicalSkills.map(({ title, icon }) => (
 							<li key={title} className="h-full">
