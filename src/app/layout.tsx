@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 import { Lexend } from "next/font/google";
 import "./globals.css";
-import { useId } from "react";
 import CustomCursor from "@/components/cursor/CustomCursor";
 import { GlobalStoreProvider } from "@/providers/GlobalStoreProvider";
 
 const font = Lexend({
   variable: "--font-lexend",
   weight: ["300", "400", "500", "600", "700"],
+	subsets: ["latin"],
 });
 
 export const metadata: Metadata = {

@@ -1,7 +1,5 @@
 "use client";
-import Button from "@/components/button/Button";
 import HoverEffectContainer from "@/components/cursor/HoverEffectContainer";
-import { useGlobalStore } from "@/providers/GlobalStoreProvider";
 
 export default function Home() {
   return (

@@ -1,4 +1,3 @@
-import { useGlobalStore } from "@/providers/GlobalStoreProvider";
 import { Url } from "next/dist/shared/lib/router/router";
 import Link from "next/link";
 import HoverEffectContainer from "../cursor/HoverEffectContainer";

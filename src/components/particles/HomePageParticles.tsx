@@ -6,7 +6,7 @@ type Props = {
 
 const HomePageParticles = (props: Props) => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
-  const canvas = canvasRef.current;
+  // const canvas = canvasRef.current;
 
   return <canvas className={props.className} ref={canvasRef}></canvas>;
 };

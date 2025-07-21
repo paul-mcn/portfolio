@@ -2,7 +2,6 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "motion/react";
 import { useGlobalStore } from "@/providers/GlobalStoreProvider";
-import colors from "tailwindcss/colors";
 
 const CustomCursor = ({ children }: { children: React.ReactNode }) => {
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
