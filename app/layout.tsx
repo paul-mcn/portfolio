@@ -12,10 +12,10 @@ const inter = Inter({
 });
 
 const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL ?? 'https://your-portfolio.amplifyapp.com';
-const SITE_NAME = 'Paul | Senior AWS Solutions Architect';
+  process.env.NEXT_PUBLIC_SITE_URL ?? 'https://fluxapplications.com.au';
+const SITE_NAME = 'Flux Applications | AI Solutions & Software Development';
 const SITE_DESCRIPTION =
-  'Senior AWS Solutions Architect specialising in cloud-native architecture, AI/ML integration, and security-first engineering. Building production-grade serverless systems on AWS.';
+  'Sydney-based software studio specialising in AI solutions, web and app development, and cloud infrastructure. We build intelligent, scalable software for ambitious businesses.';
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -25,22 +25,22 @@ export const metadata: Metadata = {
   },
   description: SITE_DESCRIPTION,
   keywords: [
-    'AWS Solutions Architect',
-    'Cloud Architecture',
-    'Amazon Bedrock',
-    'Next.js 15',
-    'Serverless',
-    'Security Engineering',
-    'OWASP',
-    'DevOps',
-    'AI Integration',
-    'Amplify Gen 2',
+    'AI Solutions Sydney',
+    'Software Development Sydney',
+    'Web Application Development',
+    'AI Automation',
+    'LLM Integration',
+    'Startup Software',
+    'Cloud Infrastructure',
+    'Next.js',
+    'Custom Software Development',
+    'Flux Applications',
   ],
-  authors: [{ name: 'Paul', url: SITE_URL }],
-  creator: 'Paul',
+  authors: [{ name: 'Flux Applications', url: SITE_URL }],
+  creator: 'Flux Applications',
   openGraph: {
     type: 'website',
-    locale: 'en_US',
+    locale: 'en_AU',
     url: SITE_URL,
     siteName: SITE_NAME,
     title: SITE_NAME,

@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { Menu, X, Cloud, Github, Linkedin } from 'lucide-react';
+import { Menu, X, Zap } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 
@@ -39,9 +39,9 @@ export function Navbar() {
           className="flex items-center gap-2 font-bold text-lg group"
         >
           <div className="p-1.5 rounded-lg bg-primary/20 group-hover:bg-primary/30 transition-colors">
-            <Cloud className="h-5 w-5 text-primary" />
+            <Zap className="h-5 w-5 text-primary" />
           </div>
-          <span className="text-gradient">Paul.dev</span>
+          <span className="text-gradient">Flux Applications</span>
         </Link>
 
         {/* Desktop nav */}
@@ -60,26 +60,8 @@ export function Navbar() {
 
         {/* Desktop actions */}
         <div className="hidden md:flex items-center gap-3">
-          <a
-            href="https://github.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="GitHub"
-            className="p-2 rounded-md text-muted-foreground hover:text-foreground hover:bg-white/5 transition-all"
-          >
-            <Github className="h-4 w-4" />
-          </a>
-          <a
-            href="https://linkedin.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="LinkedIn"
-            className="p-2 rounded-md text-muted-foreground hover:text-foreground hover:bg-white/5 transition-all"
-          >
-            <Linkedin className="h-4 w-4" />
-          </a>
           <Button asChild size="sm" variant="gradient">
-            <Link href="#contact">Hire Me</Link>
+            <Link href="#contact">Get in Touch</Link>
           </Button>
         </div>
 
@@ -112,7 +94,7 @@ export function Navbar() {
           <div className="mt-4 flex gap-3">
             <Button asChild size="sm" variant="gradient" className="flex-1">
               <Link href="#contact" onClick={() => setMobileOpen(false)}>
-                Hire Me
+                Get in Touch
               </Link>
             </Button>
           </div>

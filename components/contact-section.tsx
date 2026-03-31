@@ -25,13 +25,13 @@ const INFO_ITEMS = [
   {
     icon: Mail,
     label: 'Email',
-    value: 'hello@paul.dev',
-    href: 'mailto:hello@paul.dev',
+    value: 'paul.a.mcnamara@outlook.com',
+    href: 'mailto:paul.a.mcnamara@outlook.com',
   },
   {
     icon: MapPin,
     label: 'Location',
-    value: 'Remote · US & EU Timezones',
+    value: 'Sydney, Australia · Remote Available',
     href: null,
   },
   {
@@ -112,8 +112,8 @@ export function ContactSection() {
             <span className="text-gradient">exceptional</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-xl mx-auto">
-            Have a project in mind? I&apos;d love to hear about it. Send me a
-            message and I&apos;ll get back to you within 24 hours.
+            Have a project in mind? We&apos;d love to hear about it. Send us a
+            message and we&apos;ll get back to you within 24 hours.
           </p>
         </div>
 
@@ -152,11 +152,11 @@ export function ContactSection() {
               </h4>
               <ul className="space-y-2 text-sm text-muted-foreground">
                 {[
-                  'AWS cloud migrations & modernisations',
-                  'AI/ML product integration',
-                  'Security audits & remediation',
-                  'Serverless application development',
-                  'FinOps & architecture review',
+                  'AI automation & LLM-powered features',
+                  'Web platforms & SaaS applications',
+                  'Startup MVPs & product development',
+                  'Cloud infrastructure & architecture',
+                  'Legacy system modernisation',
                 ].map((item) => (
                   <li key={item} className="flex items-center gap-2">
                     <span className="text-emerald-400">›</span>
@@ -177,7 +177,7 @@ export function ContactSection() {
                   </div>
                   <h3 className="text-xl font-semibold">Message Sent!</h3>
                   <p className="text-muted-foreground">
-                    Thank you for reaching out. I&apos;ll get back to you within 24 hours.
+                    Thank you for reaching out. We&apos;ll get back to you within 24 hours.
                   </p>
                   <Button
                     variant="outline"

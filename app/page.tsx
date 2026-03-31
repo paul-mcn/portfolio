@@ -5,7 +5,7 @@ import { SecureByDesign } from '@/components/secure-by-design';
 import { ContactSection } from '@/components/contact-section';
 
 export const metadata: Metadata = {
-  title: 'Senior AWS Solutions Architect & AI Engineer',
+  title: 'AI Solutions & Software Development',
 };
 
 export default function HomePage() {

@@ -19,11 +19,31 @@ import { Badge } from '@/components/ui/badge';
 
 const SERVICES = [
   {
-    icon: Cloud,
-    title: 'Cloud Architecture',
+    icon: Brain,
+    title: 'AI Solutions',
     description:
-      'Design and implement resilient, multi-region AWS architectures using Lambda, DynamoDB, CloudFront, and API Gateway. From serverless to container-native.',
-    tags: ['Lambda', 'DynamoDB', 'CloudFront', 'CDK'],
+      'We embed intelligent automation and generative AI directly into your business workflows — from conversational assistants and document processing to custom LLM-powered features that save time and unlock new revenue.',
+    tags: ['LLM Integration', 'Claude', 'RAG Pipelines', 'Automation'],
+    color: 'text-violet-400',
+    bg: 'bg-violet-500/10',
+    border: 'hover:border-violet-500/40',
+  },
+  {
+    icon: Code2,
+    title: 'Web & App Development',
+    description:
+      'Modern, performant web and mobile applications built with the latest stack. From marketing sites and SaaS platforms to complex internal tools — delivered with clean code and long-term maintainability in mind.',
+    tags: ['Next.js 15', 'TypeScript', 'React', 'Mobile'],
+    color: 'text-sky-400',
+    bg: 'bg-sky-500/10',
+    border: 'hover:border-sky-500/40',
+  },
+  {
+    icon: Cloud,
+    title: 'Cloud Infrastructure',
+    description:
+      'Scalable, cost-effective AWS infrastructure designed to grow with your business. We handle architecture, deployment, and ongoing reliability so you can focus on your product.',
+    tags: ['AWS', 'Serverless', 'DynamoDB', 'CDK'],
     color: 'text-blue-400',
     bg: 'bg-blue-500/10',
     border: 'hover:border-blue-500/40',
@@ -32,48 +52,28 @@ const SERVICES = [
     icon: Shield,
     title: 'Security Engineering',
     description:
-      'Security-first design grounded in OWASP Top 10, Zero Trust principles, AWS WAF, Shield Advanced, and IAM least-privilege. Threat modeling included.',
-    tags: ['WAF', 'IAM', 'GuardDuty', 'Security Hub'],
+      'Security built in from the ground up — not bolted on at the end. Every product we ship is hardened against the OWASP Top 10 with Zero Trust principles and AWS best practices baked into the architecture.',
+    tags: ['OWASP', 'Zero Trust', 'WAF', 'IAM'],
     color: 'text-emerald-400',
     bg: 'bg-emerald-500/10',
     border: 'hover:border-emerald-500/40',
   },
   {
-    icon: Brain,
-    title: 'AI/ML Integration',
-    description:
-      'Embed generative AI into your products using Amazon Bedrock (Claude, Nova), SageMaker, and custom RAG pipelines. From prototype to production.',
-    tags: ['Bedrock', 'Claude', 'SageMaker', 'RAG'],
-    color: 'text-violet-400',
-    bg: 'bg-violet-500/10',
-    border: 'hover:border-violet-500/40',
-  },
-  {
     icon: GitBranch,
-    title: 'DevOps & CI/CD',
+    title: 'Startup Partnerships',
     description:
-      'Accelerate delivery with AWS CodePipeline, GitHub Actions, Amplify Gen 2, and automated infrastructure testing via CDK assertions and cfn-nag.',
-    tags: ['CodePipeline', 'Amplify', 'GitHub Actions', 'CDK'],
+      'We understand the startup pace. Whether you need to validate an MVP fast or scale a proven product, we move with urgency, keep scope tight, and build for the stage you are actually at.',
+    tags: ['MVP', 'Rapid Delivery', 'Scalable', 'Agile'],
     color: 'text-amber-400',
     bg: 'bg-amber-500/10',
     border: 'hover:border-amber-500/40',
   },
   {
-    icon: Code2,
-    title: 'Full-Stack Development',
-    description:
-      'Production Next.js 15 applications with TypeScript, Tailwind CSS, and Server Actions — deployed on Amplify Hosting with edge optimizations.',
-    tags: ['Next.js 15', 'TypeScript', 'React 19', 'Amplify'],
-    color: 'text-sky-400',
-    bg: 'bg-sky-500/10',
-    border: 'hover:border-sky-500/40',
-  },
-  {
     icon: TrendingDown,
-    title: 'FinOps & Cost Optimization',
+    title: 'Product Consulting',
     description:
-      'Right-size workloads, leverage Savings Plans, Spot instances, and implement cost allocation tagging to reduce AWS bills by up to 40%.',
-    tags: ['Cost Explorer', 'Savings Plans', 'Spot', 'Tagging'],
+      'Not sure where to start? We help you map the right technical approach for your goals — whether that is choosing the right AI tools, scoping a new platform, or untangling an existing system.',
+    tags: ['Discovery', 'Architecture Review', 'Roadmapping', 'AI Strategy'],
     color: 'text-rose-400',
     bg: 'bg-rose-500/10',
     border: 'hover:border-rose-500/40',
@@ -93,16 +93,15 @@ export function ServicesGrid() {
         {/* Header */}
         <div className="text-center mb-16">
           <Badge variant="default" className="mb-4">
-            What I Do
+            What We Build
           </Badge>
           <h2 className="text-4xl sm:text-5xl font-bold tracking-tight mb-4">
-            End-to-End{' '}
-            <span className="text-gradient">Cloud Services</span>
+            Software that gives you{' '}
+            <span className="text-gradient">an edge</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            From architecture design to production deployment — every service
-            is delivered with security, scalability, and long-term maintainability
-            in mind.
+            From AI automation to full-stack platforms — we build products that
+            are secure, scalable, and designed to deliver real business outcomes.
           </p>
         </div>
 
@@ -144,7 +143,7 @@ export function ServicesGrid() {
             href="#contact"
             className="inline-flex items-center gap-2 text-primary hover:text-primary/80 font-medium transition-colors group"
           >
-            Discuss your project
+            Discuss your project with us
             <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
           </Link>
         </div>

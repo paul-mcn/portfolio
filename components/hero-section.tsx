@@ -11,16 +11,16 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 
 const STATS = [
-  { value: '8+', label: 'Years in AWS' },
-  { value: '50+', label: 'Projects Delivered' },
-  { value: '99.9%', label: 'Uptime SLA' },
-  { value: '$2M+', label: 'Cloud Savings' },
+  { value: '3+', label: 'Years Experience' },
+  { value: '10+', label: 'Solutions Delivered' },
+  { value: 'AI-First', label: 'Development Approach' },
+  { value: 'Sydney', label: 'Based in Australia' },
 ];
 
 const TRUST_SIGNALS = [
-  'AWS Certified Solutions Architect – Professional',
-  'AWS Certified Security Specialty',
-  'AWS Certified DevOps Engineer',
+  'AI solutions & intelligent automation',
+  'Web & mobile application development',
+  'Startup-proven engineering',
 ];
 
 export function HeroSection() {
@@ -52,7 +52,7 @@ export function HeroSection() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500" />
               </span>
-              Available for new projects · Q2 2026
+              Now taking on new clients · Sydney, Australia
             </Badge>
           </div>
 
@@ -61,10 +61,10 @@ export function HeroSection() {
             className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.1] mb-6 animate-fade-in-up"
             style={{ animationDelay: '0.1s', opacity: 0 }}
           >
-            Senior AWS{' '}
-            <span className="text-gradient">Solutions Architect</span>
+            AI Solutions &amp;{' '}
+            <span className="text-gradient">Software</span>
             <br />
-            &amp; AI Engineer
+            for Ambitious Businesses
           </h1>
 
           {/* Sub-headline */}
@@ -72,12 +72,12 @@ export function HeroSection() {
             className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed animate-fade-in-up"
             style={{ animationDelay: '0.2s', opacity: 0 }}
           >
-            I design and build{' '}
+            We build{' '}
             <span className="text-foreground font-medium">
-              production-grade cloud systems
+              AI-powered products, web applications, and custom software
             </span>{' '}
-            on AWS — secure by design, AI-augmented, and engineered to scale.
-            From serverless architectures to Bedrock-powered applications.
+            that give your business a competitive edge. From intelligent automation
+            to full-stack platforms — engineered to scale from day one.
           </p>
 
           {/* CTAs */}
@@ -87,7 +87,7 @@ export function HeroSection() {
           >
             <Button asChild size="xl" variant="gradient" className="animate-pulse-glow">
               <Link href="#services">
-                Explore Services <ArrowRight className="h-5 w-5" />
+                Our Services <ArrowRight className="h-5 w-5" />
               </Link>
             </Button>
             <Button asChild size="xl" variant="outline">
@@ -137,9 +137,9 @@ export function HeroSection() {
         {/* Floating tech pills */}
         <div className="absolute top-1/3 left-4 hidden xl:flex flex-col gap-3">
           {[
-            { icon: Cloud, label: 'AWS Lambda', color: 'text-orange-400' },
-            { icon: Shield, label: 'AWS WAF', color: 'text-emerald-400' },
-            { icon: Zap, label: 'Bedrock', color: 'text-violet-400' },
+            { icon: Zap, label: 'AI Automation', color: 'text-violet-400' },
+            { icon: Shield, label: 'Secure by Design', color: 'text-emerald-400' },
+            { icon: Cloud, label: 'Cloud Native', color: 'text-orange-400' },
           ].map(({ icon: Icon, label, color }) => (
             <div
               key={label}
@@ -154,8 +154,8 @@ export function HeroSection() {
         <div className="absolute top-1/3 right-4 hidden xl:flex flex-col gap-3">
           {[
             { icon: Star, label: 'Next.js 15', color: 'text-blue-400' },
-            { icon: Shield, label: 'OWASP A+', color: 'text-emerald-400' },
-            { icon: Cloud, label: 'CDK v2', color: 'text-amber-400' },
+            { icon: Zap, label: 'LLM Integration', color: 'text-violet-400' },
+            { icon: Cloud, label: 'AWS', color: 'text-amber-400' },
           ].map(({ icon: Icon, label, color }) => (
             <div
               key={label}

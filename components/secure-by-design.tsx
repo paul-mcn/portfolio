@@ -105,7 +105,7 @@ export function SecureByDesign() {
             <span className="text-gradient-emerald">afterthought</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Every system I build starts from the OWASP Top 10 and AWS Security
+            Every system we build starts from the OWASP Top 10 and AWS Security
             Best Practices — not as a checklist, but as an engineering mindset.
           </p>
         </div>
