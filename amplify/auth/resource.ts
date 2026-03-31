@@ -13,13 +13,6 @@ export const auth = defineAuth({
     givenName: { required: false, mutable: true },
     familyName: { required: false, mutable: true },
   },
-  passwordPolicy: {
-    minLength: 12,
-    requireDigits: true,
-    requireLowercase: true,
-    requireUppercase: true,
-    requireSymbols: true,
-  },
   multiFactor: {
     mode: 'OPTIONAL',
     totp: true,
