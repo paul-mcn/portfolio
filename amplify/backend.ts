@@ -21,7 +21,6 @@ export const backend = defineBackend({ auth, data });
 
 // ─── Custom IAM: Bedrock + SES access for the SSR compute role ────────────────
 
-const { cfnUserPool } = backend.auth.resources.cfnResources;
 const customStack = backend.createStack('PortfolioComputePermissions');
 
 // Bedrock — allow invoking any foundation model in the account region
